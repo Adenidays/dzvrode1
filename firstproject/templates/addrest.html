@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body style="background: wheat;">
+
+    <div class="conteiner" style="margin: auto; ">
+        <nav class="nav_cont" style="display: flex; justify-content: space-around; align-items: center;">
+
+
+            <div class="collapse">
+                <ul style="list-style: none;">
+                    <li class="nav_item">
+                        <a class="nav_link active" aria-current="page" href="http://127.0.0.1:8000/chekc">Просмотр</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+       <form style="width: 80%; margin: 0 auto; display: flex; justify-content: center; padding: 20px;" action="" method="post">
+             {% csrf_token %}
+            <div  class="wrapper">
+                <label style="display:block; margin: 0 auto;" for="">
+                    <p style="text-align: center; font-size: 24px">Name:</p>
+                    <input style="padding: 20px 80px 20px 10px; border-radius: 10px;" placeholder="Name" type="text" name="user">
+                </label>
+                <label style="display:block; margin: 0 auto;" for="">
+                    <p style=" text-align: center; font-size: 24px">Surname:</p>
+                    <input style="padding:20px 80px 20px 10px; border-radius: 10px;" placeholder="Surname" name="surname" type="text">
+                </label>
+                <label style="display:block; margin: 0 auto;" for="">
+                    <p style="text-align: center; font-size: 24px">Age:</p>
+                    <input style="padding: 20px 80px 20px 10px; border-radius: 10px;" placeholder="Age" type="number" name='age'>
+                </label>  
+                <button style=" display:block; border:2px solid red; padding: 20px 50px; margin: 0 auto; border-radius: 20px; margin-top: 40px;">Add</button>   
+            </div> 
+       </form>
+
+    </div>
+    
+</body>
+</html>

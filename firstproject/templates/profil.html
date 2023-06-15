@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="margin:auto;
+            margin-top:100px;
+            width:300px;">
+        {% for user in users%}
+            <div style="border:3px solid black;
+                        margin-button:10px;">
+                <p>{{user}}</p>
+                <p>{{user.age}}</p>
+                <p>{{user.salary}}<p>
+                <p>
+                   <a href="{{user.get_absolut_url}}" style="">
+                       Перейти к профелю
+                   </a>
+            </p>
+            </div>
+        {%endfor%}
+</body>
+</html>
